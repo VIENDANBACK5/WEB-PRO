@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 4200;
+const port = 2507;
 
 app.use(express.json());
 
@@ -17,7 +17,8 @@ app.get('/users', (req, res) => {
     res.json([
         { id: 1, name: 'CHUNG', ntns: '25/07/2005' },
         { id: 2, name: 'web programming', start: '2/08/2024' },
-        { id: 3, name: 'hie', end: 'hjcbrnioceino'}
+        { id: 3, name: 'hie', end: 'hjcbrnioceino'},
+        { id: 4, name: 'test lần thứ n', endsaid: 'bye code :))' }
     ]);
 });
 
@@ -40,9 +41,4 @@ app.delete('/users/:id', (req, res) => {
     const userId = req.params.id;
     console.log(`Deleting user with ID ${userId}`);
     res.send(`User with ID ${userId} has been deleted`);
-});
-
-
-app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
 });
