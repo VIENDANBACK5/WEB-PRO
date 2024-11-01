@@ -18,7 +18,8 @@ app.get('/users', (req, res) => {
         { id: 1, name: 'CHUNG', ntns: '25/07/2005' },
         { id: 2, name: 'web programming', start: '2/08/2024' },
         { id: 3, name: 'hie', end: 'hjcbrnioceino'},
-        { id: 4, name: 'test lần thứ n', endsaid: 'bye code :))' }
+        { id: 4, name: 'test lần thứ n', endsaid: 'bye code :))' },
+        { id: 5, name: 'test lần thứ n+1', endsaid: 'lần này bye thật code :))' }
     ]);
 });
 
